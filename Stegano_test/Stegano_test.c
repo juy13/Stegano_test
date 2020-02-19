@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 		(buffer4[1] << 8) |
 		(buffer4[2] << 16) |
 		(buffer4[3] << 24);
-
+	 
 	printf("(5-8) Overall size: bytes:%u, Kb:%u \n", header.overall_size, header.overall_size / 1024);
 
 	read = fread(header.wave, sizeof(header.wave), 1, ptr);
